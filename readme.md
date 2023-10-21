@@ -552,8 +552,8 @@ html(lang="en")
 Pug has special syntax to create `templete`  or page `layout` without duplicating codes.
 via some special keyworks:
 
-* `include <filename>`                          : Include any .pug file 
-* `extends <filename>`                          : Same as include but can override any section or `block`
-        * `block <word>`
-        * `block append <word>`
-        * `block prepend <word>`
+- `include <filename>`                          : Include any .pug file 
+- `extends <filename>`                          : Same as include but can override any section or `block`
+        - `block <word>`
+        - `block append <word>`
+        - `block prepend <word>`
