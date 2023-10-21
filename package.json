@@ -1,0 +1,17 @@
+{
+  "name": "demo-pug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "tailwind-dev": "tailwindcss --input ./style.css --output ./html/style.css --watch",
+    "pug-dev": "pug pug --out ./html --pretty --watch",
+		"dev": "concurrently --kill-others \"yarn tailwind-dev\" \"yarn pug-dev\" "
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1",
+    "pug-cli": "^1.0.0-alpha6",
+    "tailwindcss": "^3.3.3"
+  }
+}

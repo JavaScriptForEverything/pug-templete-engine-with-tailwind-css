@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+	head
+		title Server-Side to Client-Side JS
+
+	body 
+		h4 Sending data from Server-Side to Client-Side:
+		hr
+		
+		h4 Server-Side: Javascript 
+		- 
+			const users = [
+				{ name: 'Riajul Islam', age: 28 },
+				{ name: 'Fiaz Sofone', age: 24 },
+				{ name: 'Arian hossain ayan', age: 8 },
+			]
+
+		- const usersJs = JSON.stringify(users)
+
+
+		h4 Client-Side: Javascript 
+
+		script.
+			const usersJs = !{usersJs}
+			console.log(usersJs)
+
+			const users = !{JSON.stringify(users)}
+			console.log(users)

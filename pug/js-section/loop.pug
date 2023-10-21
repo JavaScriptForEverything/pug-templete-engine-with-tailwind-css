@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+	head
+		title Testing 
+
+	body 
+		h1 Server-Side Loop
+		hr
+		
+		- 
+			const users = [
+				{ name: 'Riajul Islam', age: 28 },
+				{ name: 'Fiaz Sofone', age: 24 },
+				{ name: 'Arian hossain ayan', age: 8 },
+			]
+
+		h1 Javascript loop
+		ul
+			- users.forEach(({ name, age }, index) => {
+				li= index + ': ' + name + ' ' + age
+			- })
+
+
+		h1 Pug built-in loop 
+
+		ul
+			each user,index in users
+				li #{index}: #{user.name} #{user.age}

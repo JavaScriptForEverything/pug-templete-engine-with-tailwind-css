@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+	head
+		title Testing 
+
+	body 
+		p This is single line pragraph
+
+		h1 Method-1:
+		p 
+			| This is multi-line pragraph: line One
+			| This is multi-line pragraph: line Two
+
+		h1 Method-2:
+		p.
+			This is multi-line pragraph: line One
+			This is multi-line pragraph: line Two
+
+		
+		h1 Nested Tags
+
+		h3 Method-1:
+		ul
+			li
+				a(href="")  Link 1
+			li
+				a(href="") Link 2
+
+		h3 Method-2:
+		ul
+			li: a(href="") Link 1
+			li: a(href="") Link 2

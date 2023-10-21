@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+	head
+		title Client-Side JS
+		script(src="client.js") 
+
+	body 
+		h1 Client-Side JS
+		hr
+		
+		h1 Server-Side: Javascript 
+		- 
+			const users = [
+				{ name: 'Riajul Islam', age: 28 },
+				{ name: 'Fiaz Sofone', age: 24 },
+				{ name: 'Arian hossain ayan', age: 8 },
+			]
+
+		- console.log('Server-Side: log one')
+		- console.log(users)
+
+
+		h1 Client-Side: Javascript 
+
+		script.
+			console.log('Client-Side: log one')
+			console.log('Client-Side: log two')

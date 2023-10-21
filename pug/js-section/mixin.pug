@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+	head
+		title Function || Mixin 
+
+	body 
+		h1 Server-Side mixin
+		hr
+		
+		- 
+			const users = [
+				{ name: 'Riajul Islam', age: 28 },
+				{ name: 'Fiaz Sofone', age: 24 },
+				{ name: 'Arian hossain ayan', age: 8 },
+			]
+
+		h1 Javascript Function/Mixin
+
+		mixin userList (props = {})
+			- console.log('user list')
+			- 
+				const {
+					name='Your Name',
+					age 
+				} = props
+			
+			div(style='display: flex; gap: 20px; align-items: center;')
+				p= name
+				span= age
+		
+
+		each user in users
+			+userList()
+			//- +userList({ name: user.name, age: user.age })
+			//- +userList(user)

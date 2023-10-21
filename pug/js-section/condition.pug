@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+	head
+		title Condition 
+
+	body 
+		h1 Server-Side Condition
+		hr
+		
+		- 
+			const users = [
+				{ name: 'Riajul Islam', age: 28 },
+				{ name: 'Fiaz Sofone', age: 24 },
+				{ name: 'Arian hossain ayan', age: 8 },
+			]
+
+		h1 Javascript Condition
+		ul
+			- users && users.forEach(({ name, age }, index) => {
+				li= index + ': ' + name + ' ' + age
+			- })
+
+
+		h1 Pug built-in Condition 
+
+		ul
+			if users
+				each user,index in users
+					li #{index}: #{user.name} #{user.age}
+			else 
+				li No users found
+
+
+		- const isExists = false
+		ul
+			if !isExists
+				each user,index in users
+					li #{index}: #{user.name} #{user.age}
+			else 
+				li No users found
+
+
+		ul
+
+			if isExists
+				p Thay exists
+
+			else if users.length
+				each user,index in users
+					li #{index}: #{user.name} #{user.age}
+
+			else 
+				li No users found
+

@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+	head
+		title Testing 
+
+	body 
+		h1 Server-Side JS (Show logs in Terminal not browser-console)
+		
+		- console.log('Hi Server-Side')
+		- const username = 'Riajul Islam'
+		- 
+			const users = [
+				{ name: 'Riajul Islam', age: 28 },
+				{ name: 'Fiaz Sofone', age: 24 },
+				{ name: 'Arian hossain ayan', age: 8 },
+			]
+
+		p My name is #{username}
+		p= `My name is ${username}`
+
+		ul
+			- users.forEach(({ name, age }) => {
+				li= name + ' ' + age
+			- })
