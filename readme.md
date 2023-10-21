@@ -554,6 +554,6 @@ via some special keyworks:
 
 - `include <filename>`                          : Include any .pug file 
 - `extends <filename>`                          : Same as include but can override any section or `block`
-        - `block <word>`
-        - `block append <word>`
-        - `block prepend <word>`
+    - `block <word>`
+    - `block append <word>`
+    - `block prepend <word>`
