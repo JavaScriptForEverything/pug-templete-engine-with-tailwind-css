@@ -9,21 +9,21 @@ I can seperate pug into 3 section
 #### Key topics
 * Indentation                           # Like python code, Indentation desice how code react
 * HTML Section: 
-        * Single line vs Multi-line Text
-        * Nestes Tags in 2 ways
-        * Attributes
-        * Styles                        # Embeded + lnline + External CSS
+    * Single line vs Multi-line Text
+    * Nestes Tags in 2 ways
+    * Attributes
+    * Styles                            # Embeded + lnline + External CSS
 
 * JS Section: 
-        * Variables                     # Server-Side Variables
-        * Variables in html attribute   # Server-Side Variable in html Attribute
-        * Array, Object multi-line      # Server-Side Variables
-        * Condition                     # Server-Side Condition
-        * Loop                          # Server-Side Loop
-        * Mixin / Function              # Server-Side Function in pug file
+    * Variables                         # Server-Side Variables
+    * Variables in html attribute       #    "     "  Variable in html Attribute
+    * Array, Object multi-line          #    "     "  Variables
+    * Condition                         #    "     "  Condition
+    * Loop                              #    "     "  Loop
+    * Mixin / Function                  #    "     "  Function in pug file
 
-        * Client Side JS                # Embeded + External JS
-        * Sending data from Server-Side to Client-Side
+    * Client Side JS                    # Embeded + External JS
+    * Sending data from Server-Side to Client-Side
 
 
 
