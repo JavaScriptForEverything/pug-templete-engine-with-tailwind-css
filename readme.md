@@ -1,14 +1,14 @@
 ## Tailwind-css + Pug Templete
 
 
-<div style="display:flex; flex-direction: row;">
+<div style="display:flex; flex-direction: row; align-items: center;">
 <img
-	width = "250"
+	width = "50%"
 	src="https://github.com/JavaScriptForEverything/pug-templete-engine-with-tailwind-css/blob/master/assets/pug.svg"
 	alt="/assets/pug.svg"
 />
 <img
-	width = "250"
+	width = "50%"
 	src="https://github.com/JavaScriptForEverything/pug-templete-engine-with-tailwind-css/blob/master/assets/tailwindcss.svg"
 	alt="/assets/pug.svg"
 />
