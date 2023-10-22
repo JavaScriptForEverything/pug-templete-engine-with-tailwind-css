@@ -1,5 +1,25 @@
 ## Tailwind-css + Pug Templete
 
+
+<div style="display:flex; gap: 10px">
+<img
+	width = "100%"
+	src="https://github.com/JavaScriptForEverything/pug-templete-engine-with-tailwind-css/blob/master/assets/pug.svg"
+	alt="/assets/pug.svg"
+/>
+<img
+	width = "100%"
+	src="https://github.com/JavaScriptForEverything/pug-templete-engine-with-tailwind-css/blob/master/assets/tailwindcss.svg"
+	alt="/assets/pug.svg"
+/>
+</div>
+<br />
+
+
+
+
+
+
 I can seperate pug into 3 section
 * HTML section
 * Javascript section
