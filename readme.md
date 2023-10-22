@@ -547,7 +547,7 @@ html(lang="en")
 ```
 
 
-
+#
 #### Templete or Layout
 Pug has special syntax to create `templete`  or page `layout` without duplicating codes.
 via some special keyworks:
@@ -557,3 +557,86 @@ via some special keyworks:
     - `block <word>`
     - `block append <word>`
     - `block prepend <word>`
+
+
+##### Templete: /pug/templete/main.pug
+We design a templete and give some initial value which can be override any time
+
+```
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Layout Design
+		block tailwind-css
+
+	body 
+		div(class='grid grid-cols-12')
+			div(class='col-span-3 bg-red-100')
+				block left-column
+					p(class='') default left
+
+			div(class='col-span-7 bg-blue-100')
+				block middle-column
+					p default center
+
+			div(class='col-span-2 bg-orange-100')
+				block right-column
+					p default right
+
+		footer
+			block footer
+				p default footer
+
+			div(class='bg-black text-white text-center')
+				p permanent bottom footer
+
+```
+
+
+
+##### Templete: /pug/demo.pug 	: With default style
+just pass the stylesheet and everything used as the default has.
+
+NB. 
+- `link` or `script` target `.css` or `.js` from where is the generated html file has,
+- `include` or `extends` target `.pug` file from where main file located
+
+- `block <text>` 	        : Match which has `block <text>` in the layout to override the defaults
+- `block append <text>`         : Must be bellow block: add as next sibling 
+- `block prepend <text>`        :   "   "   "      "  :   "  " previous "
+
+```
+extends templete/main
+block tailwind-css
+	link(rel="stylesheet", href="style.css")
+```
+
+##### Templete: /pug/demo.pug 	: Override default layout
+```
+extends templete/main
+block tailwind-css
+	link(rel="stylesheet", href="style.css")
+
+block left-column
+	p override left
+
+block middle-column
+	p override middle
+
+//- block right-column
+	p override right
+
+
+block footer
+	div(class='text-red-500')
+		p Footer section
+
+block prepend footer
+	p top of the footer
+
+block append footer
+	p bellow of the footer
+
+```
