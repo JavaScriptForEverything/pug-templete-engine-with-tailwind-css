@@ -1,19 +1,10 @@
 ## Tailwind-css + Pug Templete
 
 
-<div style="display:flex; flex-direction: row; align-items: center;">
-<img
-	width = "50%"
-	src="https://github.com/JavaScriptForEverything/pug-templete-engine-with-tailwind-css/blob/master/assets/pug.svg"
-	alt="/assets/pug.svg"
-/>
-<img
-	width = "50%"
-	src="https://github.com/JavaScriptForEverything/pug-templete-engine-with-tailwind-css/blob/master/assets/tailwindcss.svg"
-	alt="/assets/pug.svg"
-/>
-</div>
-<br />
+
+| Pug pics                            | Tailwind pics                       | 
+| ----------------------------------- | ----------------------------------- | 
+| ![pug](https://github.com/JavaScriptForEverything/pug-templete-engine-with-tailwind-css/blob/master/assets/pug.svg) | ![dog](https://github.com/JavaScriptForEverything/pug-templete-engine-with-tailwind-css/blob/master/assets/tailwindcss.svg) | 
 
 
 
